@@ -1,19 +1,95 @@
-﻿@/*
+﻿/*
    New Perspectives on HTML5 and CSS3, 7th Edition
    Tutorial 2
    Case Problem 4
    
    Great Lakescape Lodge Style Sheet
-   Author: 
-   Date:   
+   Author: Jorge Collazo
+   Date: 9/16/19  
    
    Filename: lake_styles.css
 
 */
 @charset 'utf-8';
+@font-face{
+   font-family: champagne;
+   src:url(cac_champagne.ttf) format('ttf'),
+       url(cac_champagne.woff) format('woff');
+}
+@font-face{
+   font-family: DobkinPlain;
+   src:url(DobkinPlain.ttf) format('ttf'),
+       url(DobkinPlain.woff) format('woff');
+}
+
 html{
-   background-color: rgb(255, 238, 145)
+   background-color: rgb(255, 215, 140);
 }
 body{
-   background-color: 
+   background-color: rgb(125, 113, 168);
+   font-family: champagne, sans-serif;
+}
+header{
+   background-color: rgba(253, 186, 0, 0.808);
+   font-size: 1.3em;
+}
+header > nav a:visited, header > nav a:link{
+   color: rgb(0, 0, 0);
+}
+header > nav a:hover, header > nav a:active{
+   color:rgb(255, 255, 255);
+}
+footer{
+   background-color: rgba(250, 113, 34, 0.808);
+}
+ul{
+   list-style-type: none;
+}
+
+/*Right col*/
+#rightcol{
+   background-color: rgb(125, 113, 168);
+}
+#rightcol h2{
+   color:rgb(0, 0, 0);
+   font-size: 2em;
+   margin-left: 10px;
+}
+#rightcol nav a{
+   text-decoration: none;
+   font-size: 1.5em;
+   list-style: none;
+}
+#rightcol a:visited, #rightcol a:link{
+   color: rgb(0, 0, 0)
+}
+#rightcol a:hover, #rightcol a:active{
+   color: rgb(255, 255, 255)
+}
+
+/*Left col*/
+#leftcol{
+   background-color: rgba(75, 104, 199, 0.664);
+   font-size: 1.5em;
+}
+#leftcol > h1{
+   color: rgba(0, 0, 0, 0.808);
+   font-size: 2em;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   text-align: center;
+}
+#leftcol > p{
+   margin-left: 10px;
+}
+#leftcol > aside{
+   background-color: rgba(253, 186, 0, 0.74);
+   margin-left: 20px;
+}
+#leftcol > aside:last-child{
+   background-color: rgba(250, 113, 34, 0.685);
+   margin-left: 20px;
+}
+#leftcol > aside > li{
+   color: rgb(102, 102, 102)
 }
