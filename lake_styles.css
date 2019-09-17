@@ -32,6 +32,7 @@ body{
 header{
    background-color: rgba(253, 186, 0, 0.808);
    font-size: 1.3em;
+   font-family: DobkinPlain, sans-serif;
 }
 header > nav a:visited, header > nav a:link{
    color: rgb(0, 0, 0);
@@ -41,6 +42,8 @@ header > nav a:hover, header > nav a:active{
 }
 footer{
    background-color: rgba(250, 113, 34, 0.808);
+   font-size: 1.2em;
+   font-family: DobkinPlain, sans-serif;
 }
 ul{
    list-style-type: none;
@@ -54,6 +57,7 @@ ul{
    color:rgb(0, 0, 0);
    font-size: 2em;
    margin-left: 10px;
+   font-family: DobkinPlain, sans-serif;
 }
 #rightcol nav a{
    text-decoration: none;
@@ -78,9 +82,13 @@ ul{
    margin-top: 5px;
    margin-bottom: 5px;
    text-align: center;
+   font-family: DobkinPlain, sans-serif;
 }
 #leftcol > p{
-   margin-left: 10px;
+   margin-left: 12px;
+}
+#leftcol > p::first-letter{
+   font-size: 1.8em;
 }
 #leftcol > aside{
    background-color: rgba(253, 186, 0, 0.74);
@@ -88,8 +96,5 @@ ul{
 }
 #leftcol > aside:last-child{
    background-color: rgba(250, 113, 34, 0.685);
-   margin-left: 20px;
-}
-#leftcol > aside > li{
-   color: rgb(102, 102, 102)
+   margin-left: 12px;
 }
